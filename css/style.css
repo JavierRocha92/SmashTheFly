@@ -1,0 +1,26 @@
+body {
+	background-image: url("../imagenes/fondo2.jpg");
+	background-size: cover;
+	overflow: hidden;
+}
+
+.visor_tiempo {
+	font-size: 2em;
+	font-family: "tahoma";
+	font-variant: small-caps;
+	color: rgb(22, 170, 165);
+}
+
+.visor_juego {
+
+	/* width: 100%;  */
+	/* No hace falta */
+	height: 95vh;
+	position: relative;
+	/* border:1px solid yellowgreen; */
+
+}
+
+.fondo-header {
+	background-color: #2F4F4F;
+}

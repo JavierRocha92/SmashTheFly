@@ -40,8 +40,8 @@ const generateRamdonPosition = (fly) => {
 
     const aligns = ['center','start','end']
 
-    let columns = Math.floor(1 + Math.random() * 8)
-    let rows = Math.floor(1 + Math.random() * 8)
+    let columns = Math.floor(1 + Math.random() * 6)
+    let rows = Math.floor(1 + Math.random() * 6)
 
     if(!isExist(columns ,rows)){
         fly.style.gridRow = rows+'/'+(rows + 1) 
@@ -69,7 +69,6 @@ const createFlies = (number) => {
         fly.classList.add('fly')
 
         generateRamdonPosition(fly)
-        console.log(fly)
         
         fragment.appendChild(fly)
     }
@@ -89,17 +88,23 @@ const setFlyNumber = (number) => {
  * function to call differents function to start the game
  */
 const genereateGame = () => {
-    const number = Math.floor(1 + Math.random()*64)
+    const number = Math.floor(1 + Math.random()*30)
 
     createFlies(number)
 
     setFlyNumber(number)
 }
-
+/**
+ * function to decrease player score by one
+ */
 const decreaseAmount = () => {
     marcador.textContent = parseInt(marcador.textContent) - 1
 }
-
+/**
+ * functon to call other function to delete images and desrease score player
+ * 
+ * @param {event} event 
+ */
 const handlerClick = (event) => {
     const e = event.target
 

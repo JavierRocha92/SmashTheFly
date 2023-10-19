@@ -15,12 +15,12 @@ body {
 	
 	/* width: 100%;  */
 	/* No hace falta */
-	height: 95vh;
+	height: 90vh;
 	position: relative;
 	/* border:1px solid yellowgreen; */
 	display: grid;
-	grid-template-columns: repeat(8,1fr);
-	grid-template-rows: repeat(8,1fr);
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows: repeat(6,1fr);
 	justify-content: stretch;
 
 }
@@ -30,5 +30,8 @@ body {
 }
 .fly{
 	object-fit: cover;
-	width: 50px;
+	/* width: 40px; */
+	position: absolute;
+	width: 80px;
+	height: 70px;
 }
